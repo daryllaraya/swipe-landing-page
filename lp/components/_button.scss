@@ -1,0 +1,29 @@
+/* BUTTONS */
+.btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 0.45rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+
+.btn-primary {
+  background-color: #fc6666;
+  border-color: #fc6666;
+
+  &:hover {
+    background-color: #fb4040;
+    border-color: #fb3434;
+  }
+}
+
+.btn-outline-primary {
+  border-color: #183b56;
+  color: #183b56;
+
+  &:hover {
+    background: #183b56;
+    color: #fff;
+  }
+}

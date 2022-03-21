@@ -1,0 +1,52 @@
+/* MEDIA QUERIES */
+/* 576px BREAKPOINT */
+@include md {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 540px;
+  }
+}
+
+/* 768px BREAKPOINT */
+@include md {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 720px;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .icon {
+    i {
+      font-size: 2.25rem;
+    }
+  }
+}
+
+/* 992px BREAKPOINT */
+@include lg {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+/* 1200px BREAKPOINT */
+@include xl {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 960px;
+  }
+}
+
+
+/* 1400px BREAKPOINT */
+@include xxl {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px;
+  }
+}

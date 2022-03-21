@@ -1,0 +1,26 @@
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
+
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
