@@ -1,19 +1,23 @@
 /* NAVBAR */
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(23,31,56,.9);
+.navbar-light {
+  .navbar-toggler {
+    color: rgba(23,31,56,.9);
+    border-color: rgba(23,31,56,.1);
+  }
 
-  &:hover {
-    color: #171f38;
+  .navbar-nav {
+    .nav-link {
+      font-size: calc(#{$base-font-size} - 0.2rem);
+      color: rgba(23,31,56,.9);
+
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 }
 
-.navbar-light .navbar-toggler {
-  color: rgba(23,31,56,.9);
-  border-color: rgba(23,31,56,.1);
-}
-
 .navbar-toggler {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 0.45rem;
+  padding: calc(#{$base-padding} - 0.5rem) calc(#{$base-padding} - 0.25rem);
+  border-radius: $base-border-radius;
 }
