@@ -62,7 +62,7 @@ header .btn i {
   background-color: #fc6666;
   border-color: #fc6666;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
   background-color: #fb4040;
   border-color: #fb4040;
   -webkit-box-shadow: none;
@@ -72,8 +72,9 @@ header .btn i {
   border-color: #183b56;
   color: #183b56;
 }
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active:focus {
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:active:focus {
   background: #183b56;
+  border-color: #183b56;
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -84,12 +85,15 @@ header .btn i {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(23, 31, 56, 0.08);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(23, 31, 56, 0.08);
 }
-.btn__download:hover, .btn__download:focus, .btn__download:active:focus {
+.btn__download:hover, .btn__download:focus, .btn__download:active, .btn__download:active:focus {
   background-color: #102638;
   border-color: #102638;
 }
 
 /* BANNER */
+.banner {
+  margin-bottom: 9.75rem;
+}
 .banner__copy {
   margin-top: 5.01rem;
   margin-bottom: 5.01rem;
@@ -105,6 +109,19 @@ header .btn i {
 
 .icon i {
   font-size: calc(1rem + 0.25rem);
+}
+
+/* TILES */
+.tile__icon {
+  color: #418b78;
+  font-size: 3rem;
+}
+.tile__title {
+  color: #183b56;
+}
+.tile__copy {
+  color: #424767;
+  font-weight: 300;
 }
 
 /* MEDIA QUERIES */
@@ -129,6 +146,7 @@ header .btn i {
   }
 
   .banner__copy {
+    margin-top: 5.625rem;
     margin-bottom: 8.01rem;
   }
   .banner__subtitle {
