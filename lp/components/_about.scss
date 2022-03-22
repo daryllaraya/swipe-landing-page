@@ -1,0 +1,50 @@
+/* ABOUT */
+.about {
+  padding-top: $base-padding * 10.68;
+  padding-bottom: $base-padding * 10.68;
+
+  .row {
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    color: $secondary;
+  }
+
+  &__copy {
+    color: $body-text;
+    font-weight: 400;
+  }
+  
+}
+
+.content {
+  text-align: center;
+  margin-bottom: $base-margin * 3;
+
+  &__title {
+    color: $secondary;
+  }
+}
+
+.stats {
+  border-color: $border-color;
+  border-radius: $base-border-radius;
+  text-align: center;
+
+  &__title {
+    color: $secondary;
+    font-weight: 500;
+  }
+}
+
+.featured {
+  &__icon {
+    color: $secondary;
+    font-size: $base-font-size * 5;
+  }
+}

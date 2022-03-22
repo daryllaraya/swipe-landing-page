@@ -61,6 +61,21 @@
       }
     }
   }
+
+  .about {
+    .row {
+      padding-bottom: $base-padding * 6.68;
+    }
+  }
+
+  .content {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .stats {
+    text-align: left;
+  }
 }
 
 /* 1200px BREAKPOINT */

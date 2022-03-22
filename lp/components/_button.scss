@@ -18,6 +18,17 @@
     }
   }
 
+  &-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:hover, &:focus, &:active, &:active:focus {
+      background-color: $secondary-hover;
+      border-color: $secondary-hover;
+      box-shadow: none;
+    }
+  }
+
   &-outline-primary {
     border-color: $secondary;
     color: $secondary;
