@@ -151,6 +151,7 @@ header .btn i {
 .about__copy {
   color: #424767;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .content {
@@ -212,6 +213,10 @@ header .btn i {
 
   .icon i {
     font-size: 2.25rem;
+  }
+
+  .about__copy {
+    font-size: calc(1rem + 0.25rem);
   }
 }
 /* 992px BREAKPOINT */

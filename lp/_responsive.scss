@@ -45,6 +45,12 @@
       font-size: $base-font-size * 2.25;
     }
   }
+
+  .about {
+    &__copy {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
+  }
 }
 
 /* 992px BREAKPOINT */
