@@ -1,6 +1,6 @@
 /* BANNER */
 .banner {
-  margin-bottom: $base-margin * 13;
+  margin-bottom: $base-margin * 6;
 
   &__copy {
     margin-top: $base-margin * 6.68;
@@ -16,10 +16,25 @@
     font-size: $base-font-size;
     font-weight: 400;
   }
+
+  &__icon {
+    i {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
+  }
+
+  &__btn {
+    background-color: $secondary;
+    border-color: $secondary;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(23 31 56 / 8%);
+
+    &:hover, &:focus, &:active, &:active:focus {
+      background-color: $secondary-hover;
+      border-color: $secondary-hover;
+    }
+  }
 }
 
-.icon {
-  i {
-    font-size: calc(#{$base-font-size} + 0.25rem);
-  }
+small {
+  font-weight: 400;
 }

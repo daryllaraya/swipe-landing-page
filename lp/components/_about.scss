@@ -1,7 +1,7 @@
 /* ABOUT */
 .about {
-  padding-top: $base-padding * 10.68;
-  padding-bottom: $base-padding * 10.68;
+  padding-top: $base-padding * 4;
+  padding-bottom: $base-padding * 4;
 
   .row {
     padding-bottom: 0;
@@ -20,7 +20,6 @@
     font-weight: 400;
     font-size: $base-font-size;
   }
-  
 }
 
 .content {
@@ -29,6 +28,12 @@
 
   &__title {
     color: $secondary;
+  }
+
+  &__btn {
+    i {
+      margin-left: calc(#{$base-margin} - 0.25rem);
+    }
   }
 }
 

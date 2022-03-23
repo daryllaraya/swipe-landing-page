@@ -1,0 +1,72 @@
+/* FAQs */
+.faqs {
+  padding-bottom: $base-padding * 4;
+
+  &__title {
+    color: $secondary;
+    font-weight: 500;
+  }
+
+  &__copy {
+    font-size: $base-font-size;
+    font-weight: 400;
+  }
+}
+
+.accordion {
+  &-item {
+    border-color: $border-color;
+
+    &:first-of-type {
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+    }
+
+    &:last-of-type {
+      border-bottom-left-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+    }
+
+    &:hover {
+      background-color: $accordion-hover;
+    }
+  }
+
+  &__title {
+    background-color: rgba($accordion, .03);
+    color: $secondary;
+    font-weight: 500;
+    padding: $base-padding * 2.5 $base-padding * 3;
+
+    &:not(.collapsed) {
+      color: $secondary;
+      background-color: rgba($accordion, .03);
+      box-shadow: none;
+
+      &:after {
+        background-image: none;
+        transform: rotateZ(45deg);
+      }
+    }
+
+    &:focus {
+      border-color: $border-color;
+      box-shadow: none;
+    }
+
+    &:after {
+      font: var(--fa-font-solid);
+      content: "\2b";
+      width: auto;
+      height: auto;
+      background-image: none;
+      background-repeat: unset;
+      background-size: unset;
+    }
+  }
+
+  &__copy {
+    font-weight: 300;
+    border-top: 0.0625rem solid rgba($accordion, .125);
+  }
+}

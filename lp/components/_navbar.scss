@@ -1,14 +1,14 @@
 /* NAVBAR */
 .navbar-light {
   .navbar-toggler {
-    color: rgba(23,31,56,.9);
-    border-color: rgba(23,31,56,.1);
+    color: rgba($accordion, .9);
+    border-color: rgba($accordion, .1);
   }
 
   .navbar-nav {
     .nav-link {
       font-size: calc(#{$base-font-size} - 0.2rem);
-      color: rgba(23,31,56,.9);
+      color: rgba($accordion, .9);
 
       &:hover {
         color: $primary;

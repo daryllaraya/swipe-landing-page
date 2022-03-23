@@ -1,13 +1,13 @@
 /* HEADER */
-header {
-  .btn {
+.header {
+  &__logo {
+    height: 37px;
+    vertical-align: baseline;
+  }
+
+  &__btn {
     i {
-      margin-left: 0.2rem;
+      margin-left: calc(#{$base-margin} - 0.5rem);
     }
   }
-}
-
-.logo {
-  height: 37px;
-  vertical-align: baseline;
 }

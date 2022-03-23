@@ -13,11 +13,11 @@
 <body>
   <main>
     <!-- START OF HEADER -->
-    <header>
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img class="logo" src="/assets/light.svg" alt="Logo Light">
+            <img class="header__logo" src="/assets/light.svg" alt="Logo Light">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,8 @@
               </li>
             </ul>
             <div class="d-flex gap-2 gap-md-3">
-              <a class="btn btn-outline-primary" href="#" role="button">Free download</a>
-              <a class="btn btn-primary" href="#" role="button">Upgrade to Pro <i class="fa-solid fa-rocket"></i></a>
+              <a class="btn btn-outline-primary header__btn" href="#" role="button">Free download</a>
+              <a class="btn btn-primary header__btn" href="#" role="button">Upgrade to Pro <i class="fa-solid fa-rocket"></i></a>
             </div>
           </div>
         </div>
@@ -55,9 +55,9 @@
             <h1 class="display-4 mb-3 mb-lg-4 banner__title">Simple & Reliable.</h1>
             <p class="lead mb-4 mb-lg-5 banner__subtitle">Simpler remembers your important details, so you can fill carts, not forms. And everything is encrypted so you can speed safely through checkout.</p>
             <div class="d-flex justify-content-center gap-2 gap-md-3">
-              <a class="btn btn-primary btn__download" href="#" role="button">
+              <a class="btn btn-primary banner__btn" href="#" role="button">
                 <span class="d-flex align-items-center gap-2 gap-md-3">
-                  <span class="icon">
+                  <span class="banner__icon">
                     <i class="fa-brands fa-apple"></i>
                   </span>
                   <span class="d-inline-block text-start">
@@ -65,9 +65,9 @@
                   </span>
                 </span>
               </a>
-              <a class="btn btn-primary btn__download" href="#" role="button">
+              <a class="btn btn-primary banner__btn" href="#" role="button">
                 <span class="d-flex align-items-center gap-2 gap-md-3">
-                  <span class="icon">
+                  <span class="banner__icon">
                     <i class="fa-brands fa-google-play"></i>
                   </span>
                   <span class="d-inline-block text-start">
@@ -141,7 +141,7 @@
             <h2 class="content__title mb-4">A thoughtful way to pay</h2>
             <p class="content__copy">Simpler App remembers your important details, so you can fill carts, not forms. And everything is encrypted so you can speed safely through checkout.</p>
             <p class="content__copy">Now, you can offset the carbon emissions produced by your deliveries—for free. All you have to do is check out with Shop Pay, one of the first carbon-neutral way to pay.</p>
-            <a class="btn btn-secondary mt-3" href="#" role="button">Learn More <i class="fa-solid fa-up-right-from-square"></i></a>
+            <a class="btn btn-secondary mt-3 content__btn" href="#" role="button">Learn More <i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
           <div class="col-12 col-lg-6 ms-lg-auto">
             <img class="img-fluid" src="/assets/illustrations/scene-3.svg" alt="">
@@ -152,7 +152,7 @@
             <h2 class="content__title mb-4">Get it. Don't sweat it.</h2>
             <p class="content__copy">We track your desktop and mobile keyword rankings from any location and plot your full ranking history on a handy graph.</p>
             <p class="content__copy">You can set up automated ranking reports to be sent to your email address, so you’ll never forget to check your ranking progress.</p>
-            <a class="btn btn-secondary mt-3" href="#" role="button">Learn More <i class="fa-solid fa-up-right-from-square"></i></a>
+            <a class="btn btn-secondary mt-3 content__btn" href="#" role="button">Learn More <i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
           <div class="col-12 col-lg-6 me-lg-auto">
             <img class="img-fluid" src="/assets/illustrations/scene-2.svg" alt="">
@@ -207,6 +207,196 @@
       </div>
     </section>
     <!-- END OF FEATURED -->
+
+    <!-- START OF TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center mb-5 mb-lg-5 pb-lg-3">
+            <h1 class="mb-4 testimonials__title">Customers love it</h1>
+            <p class="lead testimonials__copy">The final result of our formula at work. Check out what our clients<br class="d-none d-lg-inline-block">have to say about our mobile app and our support team.</p>
+          </div>
+        </div>
+        <div class="row mt-lg-5 pt-lg-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card customers">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/airbnb.svg" alt="Airbnb">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card customers mt-lg-n5">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/corsair.svg" alt="Corsair">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card customers">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/paypal.svg" alt="Paypal">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 mt-lg-4">
+            <div class="card customers">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/ebay.svg" alt="Ebay">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 mt-lg-4">
+            <div class="card customers mt-lg-n5">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/northwestern.svg" alt="Northwestern University">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 mt-lg-4">
+            <div class="card customers">
+              <div class="card-body text-center py-5">
+                <img class="img-fluid mx-auto mb-3 customers__img" src="/assets/clients/elastic.svg" alt="Elastic">
+                <span class="d-block customers__icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+                <p class="px-2 my-4 customers__copy">Swipe has replaced the whiteboard for us! Being able to jump in the same file with someone fills the gap of not being able to gather in person.</p>
+                <a class="btn btn-link customers__btn" href="#" role="button"><i class="fa-solid fa-book-open"></i> Read story</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+
+    <!-- START OF FAQs -->
+    <section class="faqs">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-lg-5">
+          <div class="col-12 text-center mb-4 mb-lg-5">
+            <h1 class="mb-4 faqs__title">Facts & Questions</h1>
+            <p class="lead faqs__copy">Have a question? Read through our FAQ below. If you can't find an answer,<br class="d-none d-lg-inline-block">please email our support team. We're here to help.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="accordion" id="faqsAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button accordion__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    What is the purpose of a FAQ?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body accordion__copy">
+                    <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed accordion__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    What is a FAQ document?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body accordion__copy">
+                    <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed accordion__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    What are the top 10 interview questions?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body accordion__copy">
+                    <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed accordion__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Cookies?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body accordion__copy">
+                    <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed accordion__title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Copyright Notice
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body accordion__copy">
+                    <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF FAQs -->
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

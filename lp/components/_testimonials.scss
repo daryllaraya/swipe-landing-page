@@ -1,0 +1,45 @@
+/* TESTIMONIALS */
+.testimonials {
+  padding-top: $base-padding * 4;
+  padding-bottom: $base-padding * 4;
+
+  &__title {
+    color: $secondary;
+    font-weight: 500;
+  }
+
+  &__copy {
+    font-size: $base-font-size;
+    font-weight: 400;
+  }
+}
+
+.customers {
+  border-color: $border-color;
+  border-radius: $base-border-radius;
+
+  &__img {
+    height: 3rem;
+  }
+
+  &__icon {
+    color: $star-color;
+  }
+
+  &__copy {
+    font-weight: 300;
+  }
+
+  &__btn {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+
+    i {
+      margin-right: calc(#{$base-margin} - 0.25rem);
+    }
+  }
+}

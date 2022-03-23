@@ -16,12 +16,30 @@
   .navbar-toggler {
     padding: calc(#{$base-padding} - 0.25rem) $base-padding;
   }
+
+  .banner {
+    margin-bottom: $base-margin * 13;
+  }
+
+  .about, .testimonials {
+    padding-top: $base-padding * 10.68;
+    padding-bottom: $base-padding * 10.68;
+  }
+
+  .faqs {
+    padding-bottom: $base-padding * 10.68;
+  }
 }
 
 /* 768px BREAKPOINT */
 @include md {
   .container, .container-md, .container-sm {
     max-width: 720px;
+  }
+
+  .btn {
+    font-size: $base-font-size;
+    line-height: 1.5;
   }
 
   .banner {
@@ -33,20 +51,34 @@
     &__subtitle {
       font-size: calc(#{$base-font-size} + 0.25rem);
     }
+
+    &__icon {
+      i {
+        font-size: $base-font-size * 2.25;
+      }
+    }
   }
 
-  .btn {
-    font-size: $base-font-size;
-    line-height: 1.5;
-  }
-
-  .icon {
-    i {
-      font-size: $base-font-size * 2.25;
+  .header {
+    &__btn {
+      font-size: $base-font-size;
+      line-height: 1.5;
     }
   }
 
   .about {
+    &__copy {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
+  }
+
+  .testimonials {
+    &__copy {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
+  }
+
+  .faqs {
     &__copy {
       font-size: calc(#{$base-font-size} + 0.25rem);
     }
@@ -81,6 +113,10 @@
 
   .stats {
     text-align: left;
+  }
+
+  .mt-lg-n5 {
+    margin-top: -$base-margin * 4;
   }
 }
 
