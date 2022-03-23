@@ -1,6 +1,7 @@
 /* BANNER */
 .banner {
-  margin-bottom: $base-margin * 6;
+  padding-top: $base-padding * 4;
+  padding-bottom: $base-padding * 6;
 
   &__copy {
     margin-top: $base-margin * 6.68;
