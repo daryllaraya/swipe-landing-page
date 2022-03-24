@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
-/* 576px BREAKPOINT */
-@include sm {
+/* 576px MIN BREAKPOINT */
+@include sm-up {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -42,10 +42,34 @@
   }
 }
 
-/* 768px BREAKPOINT */
-@include md {
+/* 768px MIN BREAKPOINT */
+@include md-up {
   .container, .container-md, .container-sm {
     max-width: 720px;
+  }
+
+  .active {
+    .navbar-nav {
+      .nav-link {
+        color: $white;
+
+        &:hover {
+          color: $primary-hover;
+        }
+      }
+    }
+
+    .btn {
+      &-outline-primary {
+        color: $white;
+        border-color: $white;
+  
+        &:hover {
+          background-color: $secondary-hover;
+          border-color: $secondary-hover;
+        }
+      }
+    }   
   }
 
   .btn {
@@ -97,7 +121,7 @@
 
   .download {
     &:before  {
-      margin-top: -$base-margin * 1.2;
+      margin-top: -$base-margin * 1.15;
     }
 
     &__icon {
@@ -106,12 +130,58 @@
       }
     }
   }
+
+  .back-to-top {
+    .icon {
+      height: 45px;
+      width: 45px; 
+    }
+
+    i {
+      font-size: $base-font-size * 1.5;
+    }
+  }
 }
 
+/* 768px MAX CUSTOM BREAKPOINT */
+@include breakpoint-down(768px) {
+  .navbar {
+    background-color: $secondary;
+  }
+
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        color: $white;
+
+        &:hover {
+          color: $primary-hover;
+        }
+      }
+    }
+
+    .btn {
+      &-outline-primary {
+        color: $white;
+        border-color: $white;
+  
+        &:hover {
+          background-color: $secondary-hover;
+          border-color: $secondary-hover;
+        }
+      }
+    }
+  }
+}  
+
 /* 992px BREAKPOINT */
-@include lg {
+@include lg-up {
   .container, .container-lg, .container-md, .container-sm {
     max-width: 960px;
+  }
+
+  .navbar-collapse {
+    padding-bottom: 0;
   }
 
   .navbar-expand-lg {
@@ -151,16 +221,16 @@
   }
 }
 
-/* 1200px BREAKPOINT */
-@include xl {
+/* 1200px MIN BREAKPOINT */
+@include xl-up {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 960px;
   }
 }
 
 
-/* 1400px BREAKPOINT */
-@include xxl {
+/* 1400px MIN BREAKPOINT */
+@include xxl-up {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px;
   }

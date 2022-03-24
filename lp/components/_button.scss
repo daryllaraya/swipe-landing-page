@@ -4,8 +4,8 @@
   font-weight: 500;
   line-height: 1;
   border-radius: $base-border-radius;
-  padding-top: calc(#{$base-padding} - 0.2rem);
-  padding-bottom: calc(#{$base-padding} - 0.2rem);
+  padding-top: $base-padding;
+  padding-bottom: $base-padding;
 
   &-primary {
     background-color: $primary;
