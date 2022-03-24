@@ -75,6 +75,8 @@
   .btn {
     font-size: $base-font-size;
     line-height: 1.5;
+    padding-top: calc(#{$base-padding} - 0.2rem);
+    padding-bottom: calc(#{$base-padding} - 0.2rem);
   }
 
   .banner {
