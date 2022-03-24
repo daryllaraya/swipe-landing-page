@@ -1,13 +1,13 @@
 // CHANGE THE BG COLOR OF THE HEADER WHEN SCROLL
 
-const header = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar');
 
-window.onscroll = function() {
+window.onscroll = () => {
   var top = window.scrollY;
 
   if (top >= 50) {
-    header.classList.add('active');
+    navbar.classList.add('active');
   } else {
-    header.classList.remove('active');
+    navbar.classList.remove('active');
   }
-}
+};

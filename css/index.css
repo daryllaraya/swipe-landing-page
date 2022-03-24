@@ -311,10 +311,159 @@ small {
   border-top: 0.0625rem solid rgba(23, 31, 56, 0.125);
 }
 
+/* DOWNLOADS */
+.download {
+  background-color: #eff1f5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+.download:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/illustrations/downloads-top-bg.svg);
+  background-repeat: no-repeat;
+  margin-top: -0.3375rem;
+  z-index: -1;
+}
+.download__title {
+  color: #183b56;
+}
+.download__subtitle {
+  color: rgba(66, 71, 103, 0.85);
+}
+.download__copy {
+  font-weight: 400;
+}
+.download__btn {
+  background-color: #183b56;
+  border-color: #183b56;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(23, 31, 56, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(23, 31, 56, 0.08);
+}
+.download__btn:hover, .download__btn:focus, .download__btn:active, .download__btn:active:focus {
+  background-color: #102638;
+  border-color: #102638;
+}
+.download__icon i {
+  font-size: calc(1rem + 0.25rem);
+}
+
+/* FOOTER */
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer__title {
+  color: #183b56;
+}
+.footer__copy {
+  font-weight: 300;
+}
+.footer__logo {
+  height: 25px;
+}
+.footer__copyright {
+  font-size: 0.9rem;
+}
+
+.social__item {
+  display: inline-block;
+}
+.social__link {
+  margin-right: 0.75rem;
+}
+.social__icon {
+  font-size: 1.5rem;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+.twitter:hover {
+  color: #0d8cda;
+}
+
+.facebook {
+  color: #3b5999;
+}
+.facebook:hover {
+  color: #30487c;
+}
+
+.github {
+  color: #222;
+}
+.github:hover {
+  color: #0e0e0e;
+}
+
+.dribble {
+  color: #ea4c89;
+}
+.dribble:hover {
+  color: #e62771;
+}
+
+.footernav__item {
+  padding-bottom: calc(0.75rem - .15rem);
+}
+.footernav__link {
+  color: #424767;
+}
+.footernav__link:hover {
+  color: #fc6666;
+}
+
+.subscribe__input {
+  border-color: #cfd9eb;
+  border-radius: 0.45rem;
+  padding-top: calc(0.75rem - .2rem);
+  padding-bottom: calc(0.75rem - .2rem);
+}
+.subscribe__input::-webkit-input-placeholder {
+  color: #424767;
+}
+.subscribe__input::-moz-placeholder {
+  color: #424767;
+}
+.subscribe__input:-ms-input-placeholder {
+  color: #424767;
+}
+.subscribe__input::-ms-input-placeholder {
+  color: #424767;
+}
+.subscribe__input::placeholder {
+  color: #424767;
+}
+.subscribe__input:focus {
+  border-color: #cfd9eb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.subscribe__btn {
+  display: block;
+  width: 100%;
+}
+.subscribe__text {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.divider {
+  border-bottom: 1px solid #f9fafc;
+}
+
 /* MEDIA QUERIES */
 /* 576px BREAKPOINT */
 @media (min-width: 576px) {
-  .container {
+  .container, .container-sm {
     max-width: 540px;
   }
 
@@ -339,10 +488,20 @@ small {
   .faqs {
     padding-bottom: 8.01rem;
   }
+
+  .download {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .footer {
+    padding-top: 5.01rem;
+    padding-bottom: 3rem;
+  }
 }
 /* 768px BREAKPOINT */
 @media (min-width: 768px) {
-  .container {
+  .container, .container-md, .container-sm {
     max-width: 720px;
   }
 
@@ -378,10 +537,17 @@ small {
   .faqs__copy {
     font-size: calc(1rem + 0.25rem);
   }
+
+  .download:before {
+    margin-top: -0.9rem;
+  }
+  .download__icon i {
+    font-size: 2.25rem;
+  }
 }
 /* 992px BREAKPOINT */
 @media (min-width: 992px) {
-  .container {
+  .container, .container-lg, .container-md, .container-sm {
     max-width: 960px;
   }
 
@@ -406,16 +572,23 @@ small {
   .mt-lg-n5 {
     margin-top: -3rem;
   }
+
+  .download {
+    text-align: left;
+  }
+  .download:before {
+    margin-top: -1.0005rem;
+  }
 }
 /* 1200px BREAKPOINT */
 @media (min-width: 1200px) {
-  .container {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 960px;
   }
 }
 /* 1400px BREAKPOINT */
 @media (min-width: 1400px) {
-  .container {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px;
   }
 }

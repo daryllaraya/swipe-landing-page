@@ -30,6 +30,16 @@
   .faqs {
     padding-bottom: $base-padding * 10.68;
   }
+
+  .download {
+    padding-top: $base-padding * 8;
+    padding-bottom: $base-padding * 8;
+  }
+
+  .footer {
+    padding-top: $base-padding * 6.68;
+    padding-bottom: $base-padding * 4;
+  }
 }
 
 /* 768px BREAKPOINT */
@@ -84,6 +94,18 @@
       font-size: calc(#{$base-font-size} + 0.25rem);
     }
   }
+
+  .download {
+    &:before  {
+      margin-top: -$base-margin * 1.2;
+    }
+
+    &__icon {
+      i {
+        font-size: $base-font-size * 2.25;
+      }
+    }
+  }
 }
 
 /* 992px BREAKPOINT */
@@ -118,6 +140,14 @@
 
   .mt-lg-n5 {
     margin-top: -$base-margin * 4;
+  }
+
+  .download {
+    text-align: left;
+
+    &:before  {
+      margin-top: -$base-margin * 1.334;
+    }
   }
 }
 
