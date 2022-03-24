@@ -460,6 +460,29 @@ small {
   border-bottom: 1px solid #f9fafc;
 }
 
+.back-to-top {
+  left: unset;
+  right: 25px;
+  bottom: 25px;
+}
+.back-to-top .icon {
+  border: 1px solid #e5eaf4;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.075);
+  box-shadow: 0 0.125rem 0.25rem rgba(23, 31, 56, 0.075);
+}
+.back-to-top .icon i {
+  color: #418b78;
+  font-size: 1.5rem;
+}
+.back-to-top .icon:hover {
+  background-color: #ececec;
+}
+
 /* MEDIA QUERIES */
 /* 576px BREAKPOINT */
 @media (min-width: 576px) {
