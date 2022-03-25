@@ -16,6 +16,7 @@
 .accordion {
   &-item {
     border-color: $border-color;
+    transition: all ease 0.6s;
 
     &:first-of-type {
       border-top-left-radius: $base-border-radius;

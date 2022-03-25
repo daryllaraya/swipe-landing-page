@@ -16,7 +16,7 @@
     .nav-link {
       font-size: calc(#{$base-font-size} - 0.2rem);
       color: rgba($accordion, .9);
-
+      transition: all ease 0.6s;
 
       &:hover {
         color: $primary;

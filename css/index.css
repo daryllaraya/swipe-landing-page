@@ -46,6 +46,8 @@ a {
 .navbar-light .navbar-nav .nav-link {
   font-size: calc(1rem - 0.2rem);
   color: rgba(23, 31, 56, 0.9);
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: #fc6666;
@@ -272,6 +274,8 @@ small {
 
 .accordion-item {
   border-color: #e5eaf4;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
 }
 .accordion-item:first-of-type {
   border-top-left-radius: 0.45rem;
@@ -437,6 +441,8 @@ small {
 .footernav__link {
   color: #424767;
   font-size: calc(1rem - 0.2rem);
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
 }
 .footernav__link:hover {
   color: #fc6666;
