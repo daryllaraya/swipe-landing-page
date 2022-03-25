@@ -49,6 +49,14 @@
 }
 
 .featured {
+  &__link {
+    transition: all ease 0.6s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
   &__icon {
     color: $secondary;
     font-size: $base-font-size * 5;

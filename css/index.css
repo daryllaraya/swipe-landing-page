@@ -74,6 +74,12 @@ a {
   border-radius: 0.45rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+.btn:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 .btn-primary {
   background-color: #fc6666;
@@ -199,6 +205,14 @@ small {
   font-weight: 500;
 }
 
+.featured__link {
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+.featured__link:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
 .featured__icon {
   color: #183b56;
   font-size: 5rem;
@@ -447,6 +461,10 @@ small {
 .subscribe__btn {
   display: block;
   width: 100%;
+}
+.subscribe__btn:hover {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 .subscribe__text {
   font-size: 0.7rem;

@@ -102,6 +102,10 @@
   &__btn {
     display: block;
     width: 100%;
+
+    &:hover {
+      transform: translateY(0);
+    }
   }
 
   &__text {
