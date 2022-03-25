@@ -333,6 +333,7 @@ small {
   color: rgba(66, 71, 103, 0.85);
 }
 .download__copy {
+  font-size: 1rem;
   font-weight: 400;
 }
 .download__btn {
@@ -410,6 +411,7 @@ small {
 }
 .footernav__link {
   color: #424767;
+  font-size: calc(1rem - 0.2rem);
 }
 .footernav__link:hover {
   color: #fc6666;
@@ -420,6 +422,7 @@ small {
   border-radius: 0.45rem;
   padding-top: calc(0.75rem - .2rem);
   padding-bottom: calc(0.75rem - .2rem);
+  font-size: calc(1rem - 0.2rem);
 }
 .subscribe__input::-webkit-input-placeholder {
   color: #424767;
@@ -446,7 +449,7 @@ small {
   width: 100%;
 }
 .subscribe__text {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 
@@ -575,8 +578,22 @@ small {
   .download:before {
     margin-top: -0.8625rem;
   }
+  .download__copy {
+    font-size: calc(1rem + 0.25rem);
+  }
   .download__icon i {
     font-size: 2.25rem;
+  }
+
+  .footernav__link {
+    font-size: 1rem;
+  }
+
+  .subscribe__input {
+    font-size: 1rem;
+  }
+  .subscribe__text {
+    font-size: 0.9rem;
   }
 
   .back-to-top .icon {
