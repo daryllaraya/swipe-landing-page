@@ -386,7 +386,14 @@ small {
   display: inline-block;
 }
 .social__link {
+  display: block;
   margin-right: 0.75rem;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+.social__link:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 .social__icon {
   font-size: 1.5rem;
@@ -545,9 +552,6 @@ small {
 
   .active .navbar-nav .nav-link {
     color: #fff;
-  }
-  .active .navbar-nav .nav-link:hover {
-    color: #fb4040;
   }
   .active .btn-outline-primary {
     color: #fff;

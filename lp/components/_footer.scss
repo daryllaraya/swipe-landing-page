@@ -26,7 +26,13 @@
   }
 
   &__link {
+    display: block;
     margin-right: $base-margin;
+    transition: all ease 0.6s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 
   &__icon {
