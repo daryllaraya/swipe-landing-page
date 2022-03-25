@@ -8,6 +8,7 @@
   }
 
   &__copy {
+    font-size: calc(#{$base-font-size} - 0.2rem);
     font-weight: 300;
   }
 
@@ -16,7 +17,7 @@
   }
 
   &__copyright {
-    font-size: $base-font-size - .1rem;
+    font-size: calc(#{$base-font-size} - 0.3rem);
   }
 }
 

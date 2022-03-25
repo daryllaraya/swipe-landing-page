@@ -150,6 +150,16 @@
     }
   }
 
+  .footer {
+    &__copy {
+      font-size: $base-font-size;
+    }
+
+    &__copyright {
+      font-size: calc(#{$base-font-size} - 0.1rem);
+    }
+  }
+
   .footernav {
     &__link {
       font-size: $base-font-size;

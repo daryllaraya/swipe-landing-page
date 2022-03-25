@@ -376,13 +376,14 @@ small {
   color: #183b56;
 }
 .footer__copy {
+  font-size: calc(1rem - 0.2rem);
   font-weight: 300;
 }
 .footer__logo {
   height: 25px;
 }
 .footer__copyright {
-  font-size: 0.9rem;
+  font-size: calc(1rem - 0.3rem);
 }
 
 .social__item {
@@ -621,6 +622,13 @@ small {
   }
   .download__icon i {
     font-size: 2.25rem;
+  }
+
+  .footer__copy {
+    font-size: 1rem;
+  }
+  .footer__copyright {
+    font-size: calc(1rem - 0.1rem);
   }
 
   .footernav__link {
