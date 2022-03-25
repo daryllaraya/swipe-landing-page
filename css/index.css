@@ -243,6 +243,7 @@ small {
   color: #ffc107;
 }
 .customers__copy {
+  font-size: calc(1rem - 0.2rem);
   font-weight: 300;
 }
 .customers__btn {
@@ -594,6 +595,10 @@ small {
 
   .testimonials__copy {
     font-size: calc(1rem + 0.25rem);
+  }
+
+  .customers__copy {
+    font-size: 1rem;
   }
 
   .faqs__copy {

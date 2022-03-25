@@ -111,6 +111,12 @@
     }
   }
 
+  .customers {
+    &__copy {
+      font-size: $base-font-size;
+    }
+  }
+
   .faqs {
     &__copy {
       font-size: calc(#{$base-font-size} + 0.25rem);
