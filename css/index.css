@@ -286,8 +286,9 @@ small {
 .accordion__title {
   background-color: rgba(23, 31, 56, 0.03);
   color: #183b56;
+  font-size: calc(1rem - 0.2rem);
   font-weight: 500;
-  padding: 1.875rem 2.25rem;
+  padding: 1.125rem 1.5rem;
 }
 .accordion__title:not(.collapsed) {
   color: #183b56;
@@ -315,6 +316,7 @@ small {
   background-size: unset;
 }
 .accordion__copy {
+  font-size: calc(1rem - 0.2rem);
   font-weight: 300;
   border-top: 0.0625rem solid rgba(23, 31, 56, 0.125);
 }
@@ -596,6 +598,14 @@ small {
 
   .faqs__copy {
     font-size: calc(1rem + 0.25rem);
+  }
+
+  .accordion__title {
+    font-size: 1rem;
+    padding: 1.875rem 2.25rem;
+  }
+  .accordion__copy {
+    font-size: 1rem;
   }
 
   .download:before {

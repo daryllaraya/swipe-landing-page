@@ -117,6 +117,17 @@
     }
   }
 
+  .accordion {
+    &__title {
+      font-size: $base-font-size;
+      padding: $base-padding * 2.5 $base-padding * 3;
+    }
+
+    &__copy {
+      font-size: $base-font-size;
+    }
+  }
+
   .download {
     &:before  {
       margin-top: -$base-margin * 1.15;
