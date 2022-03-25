@@ -478,7 +478,7 @@ small {
   transform: translateY(0);
 }
 .subscribe__text {
-  font-size: 0.7rem;
+  font-size: calc(1rem - 0.3rem);
   font-weight: 300;
 }
 
@@ -639,7 +639,7 @@ small {
     font-size: 1rem;
   }
   .subscribe__text {
-    font-size: 0.9rem;
+    font-size: calc(1rem - 0.1rem);
   }
 
   .back-to-top .icon {

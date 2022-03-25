@@ -116,7 +116,7 @@
   }
 
   &__text {
-    font-size: $base-font-size - .3rem;
+    font-size: calc(#{$base-font-size} - 0.3rem);
     font-weight: 300;
   }
 }
