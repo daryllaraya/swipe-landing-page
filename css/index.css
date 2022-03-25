@@ -488,6 +488,7 @@ small {
   bottom: 25px;
 }
 .back-to-top .icon {
+  background-color: #fff;
   border: 1px solid #e5eaf4;
   border-radius: 50%;
   height: 35px;
