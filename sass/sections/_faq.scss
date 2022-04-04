@@ -8,12 +8,12 @@
     padding-bottom: $base-padding * 10.68;
   }
 
-  &__title {
+  &-title {
     color: $secondary;
     font-weight: 500;
   }
 
-  &__copy {
+  &-copy {
     font-size: $base-font-size;
     font-weight: 400;
 
@@ -43,7 +43,7 @@
     }
   }
 
-  &__title {
+  &-title {
     background-color: rgba($accordion, .03);
     color: $secondary;
     font-size: $base-font-size - 0.2rem;
@@ -82,7 +82,7 @@
     }
   }
 
-  &__copy {
+  &-copy {
     font-size: $base-font-size - 0.2rem;
     font-weight: 300;
     border-top: 0.0625rem solid rgba($accordion, 0.125);

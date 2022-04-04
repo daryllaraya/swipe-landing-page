@@ -2,16 +2,16 @@
 
 // TILES
 .tile {
-  &__icon {
+  &-icon {
     color: $icon;
     font-size: $base-font-size * 3;
   }
 
-  &__title {
+  &-title {
     color: $secondary;
   }
 
-  &__copy {
+  &-copy {
     font-weight: 300;
   }
 }

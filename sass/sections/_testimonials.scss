@@ -10,12 +10,12 @@
     padding-bottom: $base-padding * 10.68;
   }
 
-  &__title {
+  &-title {
     color: $secondary;
     font-weight: 500;
   }
 
-  &__copy {
+  &-copy {
     font-size: $base-font-size;
     font-weight: 400;
 
@@ -29,15 +29,15 @@
   border-color: $border-color;
   border-radius: $base-border-radius;
 
-  &__img {
+  &-img {
     height: 3rem;
   }
 
-  &__icon {
+  &-icon {
     color: $star-color;
   }
 
-  &__copy {
+  &-copy {
     font-size: $base-font-size - 0.2rem;
     font-weight: 300;
 
@@ -46,7 +46,7 @@
     }
   }
 
-  &__btn {
+  &-btn {
     color: $secondary;
     text-decoration: none;
 

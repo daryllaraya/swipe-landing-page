@@ -10,11 +10,11 @@
     padding-bottom: $base-padding * 4;
   }
 
-  &__title {
+  &-title {
     color: $secondary;
   }
 
-  &__copy {
+  &-copy {
     font-size: $base-font-size - 0.2rem;
     font-weight: 300;
 
@@ -23,11 +23,11 @@
     }
   }
 
-  &__logo {
+  &-logo {
     height: 25px;
   }
 
-  &__copyright {
+  &-copyright {
     font-size: $base-font-size - 0.3rem;
 
     @include md-up {
@@ -37,11 +37,11 @@
 }
 
 .social {
-  &__item {
+  &-item {
     display: inline-block;
   }
 
-  &__link {
+  &-link {
     display: block;
     margin-right: $base-margin;
     transition: all ease 0.6s;
@@ -51,7 +51,7 @@
     }
   }
 
-  &__icon {
+  &-icon {
     font-size: $base-font-size * 1.5;
   }
 }
@@ -89,11 +89,11 @@
 }
 
 .footernav {
-  &__item {
+  &-item {
     padding-bottom: $base-padding - 0.15rem;
   }
 
-  &__link {
+  &-link {
     color: $body-text;
     font-size: $base-font-size - 0.2rem;
     transition: all ease 0.6s;
@@ -109,7 +109,7 @@
 }
 
 .subscribe {
-  &__input {
+  &-input {
     border-color: darken($border-color, 6);
     border-radius: $base-border-radius;
     padding-top: $base-padding - 0.2rem;
@@ -130,7 +130,7 @@
     }
   }
 
-  &__btn {
+  &-btn {
     display: block;
     width: 100%;
 
@@ -139,7 +139,7 @@
     }
   }
 
-  &__text {
+  &-text {
     font-size: $base-font-size - 0.3rem;
     font-weight: 300;
 

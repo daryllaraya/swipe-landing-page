@@ -10,7 +10,7 @@
     padding-bottom: $base-padding * 13;
   }
 
-  &__copy {
+  &-copy {
     margin-top: $base-margin * 6.68;
     margin-bottom: $base-margin * 6.68;
 
@@ -20,12 +20,12 @@
     }
   }
 
-  &__title {
+  &-title {
     color: $secondary;
     font-weight: 700;
   }
 
-  &__subtitle {
+  &-subtitle {
     font-size: $base-font-size;
     font-weight: 400;
 
@@ -34,7 +34,7 @@
     }
   }
 
-  &__icon {
+  &-icon {
     i {
       font-size: $base-font-size + 0.25rem;
 
@@ -44,7 +44,7 @@
     }
   }
 
-  &__btn {
+  &-btn {
     background-color: $secondary;
     border-color: $secondary;
     box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(23 31 56 / 8%);
