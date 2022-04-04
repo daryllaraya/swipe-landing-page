@@ -20,7 +20,7 @@
     font-weight: 400;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} + 0.25rem);
+      font-size: $base-font-size + 0.25rem;
     }
   }
 }
@@ -38,7 +38,7 @@
   }
 
   &__copy {
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    font-size: $base-font-size - 0.2rem;
     font-weight: 300;
 
     @include md-up {
@@ -55,7 +55,7 @@
     }
 
     i {
-      margin-right: calc(#{$base-margin} - 0.25rem);
+      margin-right: $base-margin - 0.25rem;
     }
   }
 }

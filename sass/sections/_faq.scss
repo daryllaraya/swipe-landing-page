@@ -18,7 +18,7 @@
     font-weight: 400;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} + 0.25rem);
+      font-size: $base-font-size + 0.25rem;
     }
   }
 }
@@ -46,7 +46,7 @@
   &__title {
     background-color: rgba($accordion, .03);
     color: $secondary;
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    font-size: $base-font-size - 0.2rem;
     font-weight: 500;
     padding: $base-padding * 1.5 $base-padding * 2;
 
@@ -83,9 +83,9 @@
   }
 
   &__copy {
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    font-size: $base-font-size - 0.2rem;
     font-weight: 300;
-    border-top: 0.0625rem solid rgba($accordion, .125);
+    border-top: 0.0625rem solid rgba($accordion, 0.125);
 
     @include md-up {
       font-size: $base-font-size;

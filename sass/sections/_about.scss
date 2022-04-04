@@ -32,7 +32,7 @@
     font-size: $base-font-size;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} + 0.25rem);
+      font-size: $base-font-size + 0.25rem;
     }
   }
 }
@@ -52,7 +52,7 @@
 
   &__btn {
     i {
-      margin-left: calc(#{$base-margin} - 0.25rem);
+      margin-left: $base-margin - 0.25rem;
     }
   }
 }

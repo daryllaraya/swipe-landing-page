@@ -15,7 +15,7 @@
   }
 
   &__copy {
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    font-size: $base-font-size - 0.2rem;
     font-weight: 300;
 
     @include md-up {
@@ -28,10 +28,10 @@
   }
 
   &__copyright {
-    font-size: calc(#{$base-font-size} - 0.3rem);
+    font-size: $base-font-size - 0.3rem;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} - 0.1rem);
+      font-size: $base-font-size - 0.1rem;
     }
   }
 }
@@ -90,12 +90,12 @@
 
 .footernav {
   &__item {
-    padding-bottom: calc(#{$base-padding} - .15rem);
+    padding-bottom: $base-padding - 0.15rem;
   }
 
   &__link {
     color: $body-text;
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    font-size: $base-font-size - 0.2rem;
     transition: all ease 0.6s;
 
     @include md-up {
@@ -112,9 +112,9 @@
   &__input {
     border-color: darken($border-color, 6);
     border-radius: $base-border-radius;
-    padding-top: calc(#{$base-padding} - .2rem);
-    padding-bottom: calc(#{$base-padding} - .2rem);
-    font-size: calc(#{$base-font-size} - 0.2rem);
+    padding-top: $base-padding - 0.2rem;
+    padding-bottom: $base-padding - 0.2rem;
+    font-size: $base-font-size - 0.2rem;
 
     @include md-up {
       font-size: $base-font-size;
@@ -140,11 +140,11 @@
   }
 
   &__text {
-    font-size: calc(#{$base-font-size} - 0.3rem);
+    font-size: $base-font-size - 0.3rem;
     font-weight: 300;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} - 0.1rem);
+      font-size: $base-font-size - 0.1rem;
     }
   }
 }
@@ -165,7 +165,7 @@
     height: 35px;
     width: 35px; 
     transition: all ease 0.6s;
-    box-shadow: 0 .125rem .25rem rgba($accordion, .075);
+    box-shadow: 0 0.125rem 0.25rem rgba($accordion, .075);
 
     @include md-up {
       height: 45px;

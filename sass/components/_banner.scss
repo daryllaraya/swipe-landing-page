@@ -30,13 +30,13 @@
     font-weight: 400;
 
     @include md-up {
-      font-size: calc(#{$base-font-size} + 0.25rem);
+      font-size: $base-font-size + 0.25rem;
     }
   }
 
   &__icon {
     i {
-      font-size: calc(#{$base-font-size} + 0.25rem);
+      font-size: $base-font-size + 0.25rem;
 
       @include md-up {
         font-size: $base-font-size * 2.25;

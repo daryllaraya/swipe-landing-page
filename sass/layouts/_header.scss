@@ -14,7 +14,7 @@
     }
 
     i {
-      margin-left: calc(#{$base-margin} - 0.5rem);
+      margin-left: $base-margin - 0.5rem;
     }
   }
 }

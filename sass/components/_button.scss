@@ -2,7 +2,7 @@
 
 // BUTTONS
 .btn {
-  font-size: calc(#{$base-font-size} - 0.2rem);
+  font-size: $base-font-size - 0.2rem;
   font-weight: 500;
   line-height: 1;
   border-radius: $base-border-radius;
@@ -17,8 +17,8 @@
   @include md-up {
     font-size: $base-font-size;
     line-height: 1.5;
-    padding-top: calc(#{$base-padding} - 0.2rem);
-    padding-bottom: calc(#{$base-padding} - 0.2rem);
+    padding-top: $base-padding - 0.2rem;
+    padding-bottom: $base-padding - 0.2rem;
   }
 
   &-primary {
