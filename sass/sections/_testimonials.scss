@@ -1,7 +1,12 @@
-/* TESTIMONIALS */
+// TESTIMONIALS
 .testimonials {
   padding-top: $base-padding * 4;
   padding-bottom: $base-padding * 4;
+
+  @include sm-up {
+    padding-top: $base-padding * 10.68;
+    padding-bottom: $base-padding * 10.68;
+  }
 
   &__title {
     color: $secondary;
@@ -11,6 +16,10 @@
   &__copy {
     font-size: $base-font-size;
     font-weight: 400;
+
+    @include md-up {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
   }
 }
 
@@ -29,6 +38,10 @@
   &__copy {
     font-size: calc(#{$base-font-size} - 0.2rem);
     font-weight: 300;
+
+    @include md-up {
+      font-size: $base-font-size;
+    }
   }
 
   &__btn {
@@ -42,5 +55,11 @@
     i {
       margin-right: calc(#{$base-margin} - 0.25rem);
     }
+  }
+}
+
+.mt-lg-n5 {
+  @include lg-up {
+    margin-top: -$base-margin * 4;
   }
 }

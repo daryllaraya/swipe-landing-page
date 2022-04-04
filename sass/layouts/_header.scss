@@ -1,4 +1,4 @@
-/* HEADER */
+// HEADER
 .header {
   &__logo {
     height: 37px;
@@ -6,6 +6,11 @@
   }
 
   &__btn {
+    @include md-up {
+      font-size: $base-font-size;
+      line-height: 1.5;
+    }
+
     i {
       margin-left: calc(#{$base-margin} - 0.5rem);
     }

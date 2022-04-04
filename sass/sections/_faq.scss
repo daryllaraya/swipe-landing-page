@@ -1,6 +1,10 @@
-/* FAQs */
+// FAQs
 .faqs {
   padding-bottom: $base-padding * 4;
+
+  @include sm-up {
+    padding-bottom: $base-padding * 10.68;
+  }
 
   &__title {
     color: $secondary;
@@ -10,6 +14,10 @@
   &__copy {
     font-size: $base-font-size;
     font-weight: 400;
+
+    @include md-up {
+      font-size: calc(#{$base-font-size} + 0.25rem);
+    }
   }
 }
 
@@ -39,6 +47,11 @@
     font-size: calc(#{$base-font-size} - 0.2rem);
     font-weight: 500;
     padding: $base-padding * 1.5 $base-padding * 2;
+
+    @include md-up {
+      font-size: $base-font-size;
+      padding: $base-padding * 2.5 $base-padding * 3;
+    }
 
     &:not(.collapsed) {
       color: $secondary;
@@ -71,5 +84,9 @@
     font-size: calc(#{$base-font-size} - 0.2rem);
     font-weight: 300;
     border-top: 0.0625rem solid rgba($accordion, .125);
+
+    @include md-up {
+      font-size: $base-font-size;
+    }
   }
 }

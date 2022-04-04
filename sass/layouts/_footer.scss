@@ -1,7 +1,12 @@
-/* FOOTER */
+// FOOTER
 .footer {
   padding-top: $base-padding * 4;
   padding-bottom: $base-padding * 4;
+
+  @include sm-up {
+    padding-top: $base-padding * 6.68;
+    padding-bottom: $base-padding * 4;
+  }
 
   &__title {
     color: $secondary;
@@ -10,6 +15,10 @@
   &__copy {
     font-size: calc(#{$base-font-size} - 0.2rem);
     font-weight: 300;
+
+    @include md-up {
+      font-size: $base-font-size;
+    }
   }
 
   &__logo {
@@ -18,6 +27,10 @@
 
   &__copyright {
     font-size: calc(#{$base-font-size} - 0.3rem);
+
+    @include md-up {
+      font-size: calc(#{$base-font-size} - 0.1rem);
+    }
   }
 }
 
@@ -83,6 +96,10 @@
     font-size: calc(#{$base-font-size} - 0.2rem);
     transition: all ease 0.6s;
 
+    @include md-up {
+      font-size: $base-font-size;
+    }
+
     &:hover {
       color: $primary;
     }
@@ -96,6 +113,10 @@
     padding-top: calc(#{$base-padding} - .2rem);
     padding-bottom: calc(#{$base-padding} - .2rem);
     font-size: calc(#{$base-font-size} - 0.2rem);
+
+    @include md-up {
+      font-size: $base-font-size;
+    }
 
     &::placeholder {
       color: $body-text;
@@ -119,6 +140,10 @@
   &__text {
     font-size: calc(#{$base-font-size} - 0.3rem);
     font-weight: 300;
+
+    @include md-up {
+      font-size: calc(#{$base-font-size} - 0.1rem);
+    }
   }
 }
 
@@ -140,9 +165,18 @@
     transition: all ease 0.6s;
     box-shadow: 0 .125rem .25rem rgba($accordion, .075);
 
+    @include md-up {
+      height: 45px;
+      width: 45px;
+    }
+
     i {
       color: $icon;
       font-size: $base-font-size * 1.2;
+
+      @include md-up {
+        font-size: $base-font-size * 1.5;
+      }
     }
 
     &:hover {

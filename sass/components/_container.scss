@@ -1,0 +1,35 @@
+// MODIFIED BOOSTRAP 5 CONTAINER WIDTH
+// 576px MIN BREAKPOINT
+.container, .contianer-sm {
+  @include sm-up {
+    max-width: 540px;
+  }
+}
+
+// 768px MIN BREAKPOINT
+.container, .container-md, .container-sm {
+  @include md-up {
+    max-width: 720px;
+  }
+}
+
+// 992px MIN BREAKPOINT
+.container, .container-lg, .container-md, .container-sm {
+  @include lg-up {
+    max-width: 960px;
+  }
+}
+
+// 1200px MIN BREAKPOINT
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  @include xl-up {
+    max-width: 960px;
+  }
+}
+
+// 1400px MIN BREAKPOINT
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  @include xxl-up {
+    max-width: 1140px;
+  }
+}
