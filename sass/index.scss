@@ -1,30 +1,14 @@
 // ABSTRACTS
-@import 
-  'abstracts/variables',
-  'abstracts/breakpoints';
+@use 'abstracts';
 
 // BASE
-@import 
-  'base/reset',
-  'base/fonts',
-  'base/typography';
+@use 'base';
 
 // LAYOUT
-@import 
-  'layouts/header',
-  'layouts/footer';
+@use 'layouts';
 
 // COMPONENTS
-@import 
-  'components/container',
-  'components/navbar',
-  'components/button',
-  'components/banner',
-  'components/tile';
+@use 'components';
 
 // SECTIONS
-@import 
-  'sections/about',
-  'sections/testimonials',
-  'sections/faq',
-  'sections/download';
+@use 'sections';
